@@ -1,0 +1,254 @@
+.get , .getagain ,.getcourse{
+  position:absolute;
+  left:5%;
+  top:66%;
+  background-color:#1abc9c;
+  color:white;
+  border:medium none;
+  border-radius:25px;
+  width:130px;
+  padding:10px;
+  text-align: center;
+  font-size:15px;
+}
+.get:hover ,.getagain:hover ,.getcourse:hover{
+  background-color:#17a68a;
+}
+.getagain , .getcourse{
+  font-weight: bolder;
+  width:180px;
+  position: relative;
+  left:1%;
+}
+.getcourse{
+  background-color:#989898;
+  width:180px;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+.me{
+  position:relative;
+  left:20%;
+  border-radius:50%;
+}
+
+
+h3{
+  color:lightGray;
+}
+.me1{
+  position:relative;
+  left:25%;
+  color:gray;
+}
+.blog , .quotes{
+  position:relative;
+  left:20%;
+  text-align:justify;
+  padding:20px 80px;
+  color:black;
+  font:18px serif;
+  line-height:19pt;
+}
+.quotes{
+  left:10%;
+  color:gray;
+  font-style: italic;
+}
+.courses{
+  position: relative;
+  background-color:whiteSmoke;
+  color:black;
+  padding:20px 80px;
+  text-align:center;
+  font:18px serif;
+}
+.slogan{
+  text-align:center;
+  font:18px serif;
+  padding:20px 80px;
+  color:black;
+  font-weight: bolder;
+}
+
+.footer{
+  background-color:#414e53;
+  font:18px serif;
+  text-align:center;
+  color:white;
+  padding:20px 80px;
+}
+span{
+  color:lightgreen;
+  font-size:30px;
+  font-weight:bolder;
+}
+.flip-card{
+  margin:25px;
+  cursor:pointer;
+  float:left;
+  width:28%;
+  height:330px;
+  padding:20px 30px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+.flip-card-inner{
+  position:relative;
+  height:100%;
+  width:100%;
+  text-align:center;
+  transition:transform 0.6s;
+  transform-style:preserve-3d;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+  border-radius: 25px;
+}
+.flip-card:hover .flip-card-inner{
+  transform:rotateY(180deg);
+}
+.flip-card-front ,.flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.flip-card-front{
+  background-color:white;
+  color:grey;
+}
+.flip-card-back{
+  text-align: center;
+  background-color:black;
+  color:white;
+  transform: rotateY(180deg);
+}
+
+//clear floats after columns
+.row:after {
+  content:"";
+  display:'table';
+  clear:both;
+}
+.icon{
+  position:relative;
+  border-radius:50%;
+  width:150px;
+}
+/* allcourses */
+.course-card{
+  margin-top:5%;
+  margin-left:17.5%;
+  cursor:pointer;
+  float:left;
+  width:25%;
+  height:350px;
+  padding:20px 30px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+.course-card-inner{
+  position:relative;
+  height:100%;
+  width:100%;
+  text-align:center;
+  box-shadow: 2px 2px 2px 2px lightGray;
+  border-radius: 25px;
+}
+
+.course-card-front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color:white;
+  color:coral;
+}
+.course-icon{
+  position:relative;
+  border-radius:50%;
+  width:100px;
+}
+
+/*each courses */
+.tutorial-intro{
+  margin-top:5%;
+  margin-left:17.5%;
+  cursor:pointer;
+  float:left;
+  width:45%;
+  height:350px;
+  padding:20px 30px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+.text{
+  font:35px timesnewroman;
+}
+.course-icon-each{
+  position:relative;
+  left:200px;
+  top:75px;
+  width:150px;
+  box-shadow: 4px 4px 4px  silver;
+}
+.shadow{
+  position: relative;
+  width:100%;
+  height:20%;
+  box-shadow: 4px 4px 4px silver;
+  color:transparent;
+}
+.enroll{
+  /* display:block; */
+  position:relative;
+  top:60px;
+  width:120px;
+  height:40px;
+  background-color: #1abc9c;
+  color:white;
+  font:17px arial;
+  box-shadow: 2px 2px 2px silver;
+}
+.enroll:hover{
+  background-color: #17a68a;
+  text-decoration: underline;
+}
+
+/* about the course*/
+.tutorial-intro-about{
+  margin-top:1%;
+  margin-left:17.5%;
+  cursor:pointer;
+  float:left;
+  width:45%;
+  height:220px;
+  padding:20px 30px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+/*tutorial display*/
+.column{
+  position:relative;
+  top:50px;
+  left:10px;
+  float:left;
+  width:33.33%;
+  padding:10px;
+  height:6750px;
+  cursor: pointer;
+}
+/* row is already clear above */
+.text{
+  margin-left:20px;
+  color:black;
+}
+.username{
+  font-size:25px;
+  position:fixed;
+  top:8.5%;
+  left:1%;
+}

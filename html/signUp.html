@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+     <style>
+    .form{
+      cursor: pointer;
+      position: absolute;
+      top:150px;
+      left:380px;
+      font-family: times roman;
+      font-weight: bolder;
+      margin-left:10%;
+      width:350px;
+      height:350px;
+      border: 2px solid darkgray;
+    }
+    .form-inner{
+      position:absolute;
+      background-color:lightseagreen;
+      width:350px;
+      height:50px;
+      cursor: pointer;
+    }
+    .content{
+      cursor: pointer;
+      font-family: times roman;
+      font-weight: bolder;
+      border: 2px solid lightgrey;
+      width:280px;
+      height:200px;
+      position: absolute;
+      left:10%;
+      top:100px;
+    }
+    input{
+      height:28px;
+      width:180px;
+      border:2px solid lightgray;
+      cursor: pointer;
+    }
+    form{
+      padding:15px;
+      margin-left:5%;
+      cursor: pointer;
+    }
+    .submit{
+      width:80px;
+      height:30px;
+      background-color:lightcoral;
+      color:white;
+      box-shadow: 4px 4px 4px lightgray;
+      cursor: pointer;
+      border:2px solid white;
+      font:15px sans-serif;
+    }
+    </style>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+        <div class='form'>
+          <div class="form-inner">
+            <h2 style='color:white; text-align:center;'>Register here !</h2>
+            <div class='content'>
+              <form method='post' action='/submit'>
+                <br>
+    <i style='font-size:30px' class='fa fa-user'></i> <input type='text' name='name' placeholder='enter your username' required /> <br> <br>
+    <i  style='font-size:25px' class='fa fa-envelope'></i> <input type='email' name='email' placeholder='enter your mail id' required /> <br> <br>
+    <i  style='font-size:30px' class='fa fa-key'></i> <input type='password' name='password' placeholder='enter your password' required /> <br> <br>
+  <center>  <button type='submit' class='submit'>Submit</button> </center>
+              </form>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>

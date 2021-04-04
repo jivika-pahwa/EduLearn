@@ -1,0 +1,71 @@
+#quizContainer,#result {
+  background-color: pink;
+  position:fixed;
+  top:30%;
+  left:10%;
+  width:80%;
+  height:40%;
+  box-shadow:2px 2px 3px 3px  black;
+  cursor:pointer;
+  }
+#questn {
+  text-align:center;
+  background-color: lightblue;
+  width:100%;
+  height:20%;
+  color:white;
+  font-size:30px;
+}
+#opt1,#opt2,#opt3,#opt4 ,#nextButton ,#checkbtn {
+  background-color: lightblue;
+  margin-top:5%;
+  width:63%;
+  height:15%;
+  color:black;
+  font-size:25px;
+  line-height: 1.6;
+}
+#opt1:hover{
+  background-color:salmon;
+}
+#opt2:hover{
+  background-color:salmon;
+}
+#opt3:hover{
+  background-color:salmon;
+}
+#opt4:hover{
+  background-color:salmon;
+}
+
+#nextButton , #checkbtn {
+  width:40%;
+  margin-left: 29px;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow:2px 2px 2px  2px silver;
+  cursor:pointer;
+}
+  #result_status{
+    color:white;
+    text-align: center;
+    font-size:25px;
+    width:60%;
+    height:16%;
+    background-color: lightblue;
+    margin-top:5%;
+    margin-left:18%;
+  }
+  #right_ans {
+    color:white;
+    text-align: center;
+    font-size:25px;
+    width:60%;
+    height:16%;
+    background-color: lightblue;
+    margin-top:7%;
+    margin-left:18%;
+  }
+  input[type=radio] {
+    cursor:pointer;
+  }
