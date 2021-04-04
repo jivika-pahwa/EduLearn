@@ -1,0 +1,23 @@
+{
+  "name": "education_website",
+  "version": "1.0.0",
+  "description": "education website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jivika pahwa",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "body-parser": "^1.19.0",
+    "dateformat": "^3.0.3",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.12.2",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.2",
+    "save": "^2.4.0"
+  }
+}

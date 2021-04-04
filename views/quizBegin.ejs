@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+    .box{
+    position:absolute;
+    top:100px;
+    left:30%;
+    width:45%;
+  }
+    </style>
+
+    <!-- <link rel = "stylesheet" type="text/css" href="/css/quiz.css"> -->
+    <meta charset="utf-8">
+    <title> <%= title %> </title>
+    <% include templates/header.ejs %>
+  </head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+ <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <div class="username">
+      <a href='/userprofile'> welcome <%=details%> </a>
+    </div>
+
+  <body>
+            <div class="box">
+            <% friends.forEach(function(item){ %>
+                <b>
+              <div class="panel panel-primary">
+
+                        <div class="panel-heading">
+
+                          <%= item.Question11%>
+                        </div>
+                        <div class="panel-body">
+                          <%= item.option11 %> <br>
+                          <%= item.option21 %> <br>
+                          <%= item.option31 %> <br>
+                          <%= item.option41 %> <br><br>
+                          <%= item.answer1 %>
+
+                        </div>
+                      </div>
+                      <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                  <%= item.Question12%>
+                                </div>
+                                <div class="panel-body">
+                                  <%= item.option12 %> <br>
+                                  <%= item.option22 %> <br>
+                                  <%= item.option32 %> <br>
+                                  <%= item.option42 %> <br><br>
+                                  <%= item.answer2 %>
+                                </div>
+                              </div>
+                              <div class="panel panel-primary">
+                                        <div class="panel-heading">
+                                          <%= item.Question13 %>
+                                        </div>
+                                        <div class="panel-body">
+                                          <%= item.option13 %> <br>
+                                            <%= item.option23 %> <br>
+                                           <%= item.option33 %> <br>
+                                          <%= item.option43 %> <br><br>
+                                          <%= item.answer3 %>
+
+
+                                        </div>
+                                      </div>
+                                      </b>
+                                        <br>
+
+                      </div>
+
+                      <%  }); %>
+
+                      <!-- <p id = "result"> Result: </p> -->
+
+
+
+
+                            <!-- <script src="/js/question.js"></script> -->
+            <!-- <script src="/js/quiz_practice2.js"></script> -->
+            <% friends.forEach(function(item){ %>
+            <script type="text/javascript">
+              // function showResult(){
+              //   alert("hello");
+              //
+              //   var your_answer = document.querySelector('input[type=radio]:checked').value;
+              //   if(your_answer == <%= item.Question11.answer1 %>){
+              //     document.write("1 marks");
+              //   }
+              //   //document.getElementById('result').innerHTML = your_answer;
+              // };
+            </script>
+        <%  }); %>
+  </body>
+</html>

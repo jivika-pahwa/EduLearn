@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> <%= title%> </title>
+    <% include templates/header.ejs %>
+  </head>
+  <body>
+
+    <div>
+      <div class="row">
+
+      <% friends.forEach(function(item){ %>
+        <div class="username">
+        <a href='/userprofile'> welcome <%=details%> </a>
+        </div>
+          <div class='tutorial-intro'>
+
+      <h4 class='text'><b><%= item.title %> Tutorial</b></h4>
+      <h4 style='color:grey;'><%= item.description %></h4>
+    <button type='button' id='enroll' class='enroll' onclick='show();'>Enroll me </button>
+    <a href='/courses/<%= item.shortname %>/<%= item.name %>'><button type='button'id='goto' class='enroll'>Go to course </button></a>
+      </div>
+
+      <img src="/images/<%= item.shortname %>.png" class = 'course-icon-each' alt="<%= item.name %>" /> %>
+      </div>
+      <div class='shadow'>
+        about the course
+      </div>
+      <!-- about this course -->
+      <div  class='tutorial-intro-about'>
+        <h4 class='text'>About this course</h4><br>
+        <h4 style='color:grey;'><%= item.about %></h4>
+        <br>
+        <hr />
+        </div>
+
+        <!-- what you'll learn -->
+
+        <div class='tutorial-intro-about'>
+        <h4 class='text'>What you'll learn</h4><br>
+        <li style='color:grey; font-size:18px;'><%= item.learn %></li>
+        <br>
+        <hr />
+        </div>
+        <!-- syllabus of course -->
+          <div class='tutorial-intro-about'>
+        <h4 class='text'>Syllabus of the course</h4><br>
+      <li style='color:grey; font-size:18px;'>Module 1 | <%= item.module1 %></li>
+        <hr />
+      <li style='color:grey; font-size:18px;'>Module 2 | <%= item.module2 %></li>
+          <hr />
+      <li style='color:grey; font-size:18px;'>Module 3 | <%= item.module3 %></li>
+            <hr />
+      <li style='color:grey; font-size:18px;'>Module 4 | <%= item.module4 %></li>
+              <hr />
+      <li style='color:grey; font-size:18px;'>Module 5 | <%= item.module5 %></li>
+                <hr />
+      <li style='color:grey; font-size:18px;'>Module 6 | <%= item.module6 %></li>
+                  <hr />
+      <li style='color:grey; font-size:18px;'>Module 7 | <%= item.module7 %></li>
+                    <hr />
+      <li style='color:grey; font-size:18px;'>Module 8 | <%= item.module8 %></li>
+                      <hr />
+      <li style='color:grey; font-size:18px;'>Module 9 | <%= item.module9 %></li>
+                        <hr />
+      <li style='color:grey; font-size:18px;'>Module 10 | <%= item.module10 %></li>
+                          <hr />
+      <li style='color:grey; font-size:18px;'>Module 11 | <%= item.module11 %></li>
+                            <hr />
+      <li style='color:grey; font-size:18px;'>Module 12 | <%= item.module12 %></li>
+                              <hr />
+        </div>
+        <!-- <div class='shadow'>
+          about the course
+        </div> -->
+    </div>
+    <!-- //card -->
+      <% }); %>
+  </body>
+  <script type='text/javascript'>
+   document.getElementById('goto').style.display = 'none';
+   document.getElementById('enroll').onclick = function() {
+    alert("Course Enrolled!");
+  document.getElementById('goto').style.display = 'block';
+  document.getElementById('enroll').style.display = 'none';
+  // alert("Go to course is now enabled");
+  };
+
+  </script>
+</html>

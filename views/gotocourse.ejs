@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title> <%= title%> </title>
+    <% include templates/header.ejs %>
+  </head>
+  <body>
+    <div>
+      <div class="row">
+          <div class="row">
+            <div class="column"  style='background-color:#ccc;'>
+
+              <% Lessons.forEach(function(item){ %>
+              <div class='text' style='position:fixed;'>
+              <h2>Tutorial</h2>
+              <h4><%= item.module1 %></h4>
+              <h4><%= item.module2 %></h4>
+              <h4><%= item.module3 %></h4>
+              <h4><%= item.module4 %></h4>
+              <h4><%= item.module5 %></h4>
+              <h4><%= item.module6 %></h4>
+              <h4><%= item.module7 %></h4>
+              <h4><%= item.module8 %></h4>
+              <h4><%= item.module9 %></h4>
+              <h4><%= item.module10 %></h4>
+              <h4><%= item.module11 %></h4>
+              <h4><%= item.module12 %></h4>
+              </div>
+        </div>
+
+<!-- ---------------------------------------------------------------------- -->
+          <div class="column"  style='background-color:#bbb;'>
+              <div class='text'>
+                <!-- content 1 -->
+            <h2><%=item.module1%></h2>
+
+            <h3><%= item.content1 %></h3>
+            <h4><%= item.ans11 %></h4>
+            <h4><%= item.ans12 %></h4>
+            <h4><%= item.ans13 %></h4>
+            <h4><%= item.ans14 %></h4>
+            <h4><%= item.ans15 %></h4>
+            <h4><%= item.ans16 %></h4>
+          </div>
+            <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+            <!-- content 2 -->
+            <div class='text'>
+          <h2><%=item.module2%></h2>
+
+          <h3><%= item.content2 %></h3>
+          <h4><%= item.ans21 %></h4>
+          <h4><%= item.ans22 %></h4>
+          <h4><%= item.ans23 %></h4>
+          <h4><%= item.ans24 %></h4>
+          <h4><%= item.ans25 %></h4>
+          <h4><%= item.ans26 %></h4>
+        </div>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- content 3 -->
+          <div class='text'>
+        <h2><%=item.module3%></h2>
+
+        <h3><%= item.content3 %></h3>
+        <h4><%= item.ans31 %></h4>
+        <h4><%= item.ans32 %></h4>
+        <h4><%= item.ans33 %></h4>
+        <h4><%= item.ans34 %></h4>
+        <h4><%= item.ans35 %></h4>
+        <h4><%= item.ans36 %></h4>
+      </div>
+        <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+        <!-- content 4 -->
+        <div class='text'>
+      <h2><%=item.module4%></h2>
+
+      <h3><%= item.content4 %></h3>
+      <h4><%= item.ans41 %></h4>
+      <h4><%= item.ans42 %></h4>
+      <h4><%= item.ans43 %></h4>
+      <h4><%= item.ans44 %></h4>
+      <h4><%= item.ans45 %></h4>
+      <h4><%= item.ans46 %></h4>
+    </div>
+      <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+      <!-- content 5 -->
+          <div class='text'>
+        <h2><%=item.module5%></h2>
+
+        <h3><%= item.content5 %></h3>
+        <h4><%= item.ans51 %></h4>
+        <h4><%= item.ans52 %></h4>
+        <h4><%= item.ans53 %></h4>
+        <h4><%= item.ans54 %></h4>
+        <h4><%= item.ans55 %></h4>
+        <h4><%= item.ans56 %></h4>
+      </div>
+        <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+        <!-- content 6 -->
+        <div class='text'>
+      <h2><%=item.module6%></h2>
+
+      <h3><%= item.content6 %></h3>
+      <h4><%= item.ans61 %></h4>
+      <h4><%= item.ans62 %></h4>
+      <h4><%= item.ans63 %></h4>
+      <h4><%= item.ans64 %></h4>
+      <h4><%= item.ans65 %></h4>
+      <h4><%= item.ans66 %></h4>
+    </div>
+      <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+        <!-- content 7 -->
+        <div class='text'>
+      <h2><%=item.module7%></h2>
+
+      <h3><%= item.content7 %></h3>
+      <h4><%= item.ans71 %></h4>
+      <h4><%= item.ans72 %></h4>
+      <h4><%= item.ans73 %></h4>
+      <h4><%= item.ans74 %></h4>
+      <h4><%= item.ans75 %></h4>
+      <h4><%= item.ans76 %></h4>
+    </div>
+      <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+      <!-- content 8 -->
+        <div class='text'>
+      <h2><%=item.module8%></h2>
+
+      <h3><%= item.content8 %></h3>
+      <h4><%= item.ans81 %></h4>
+      <h4><%= item.ans82 %></h4>
+      <h4><%= item.ans83 %></h4>
+      <h4><%= item.ans84 %></h4>
+      <h4><%= item.ans85 %></h4>
+      <h4><%= item.ans86 %></h4>
+    </div>
+      <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+        <!-- content 9 -->
+        <div class='text'>
+      <h2><%=item.module9%></h2>
+
+      <h3><%= item.content9 %></h3>
+      <h4><%= item.ans91 %></h4>
+      <h4><%= item.ans92 %></h4>
+      <h4><%= item.ans93 %></h4>
+      <h4><%= item.ans94 %></h4>
+      <h4><%= item.ans95 %></h4>
+      <h4><%= item.ans96 %></h4>
+      </div>
+      <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+      <!-- content 10 -->
+        <div class='text'>
+        <h2><%=item.module10%></h2>
+
+        <h3><%= item.content10 %></h3>
+        <h4><%= item.ans101 %></h4>
+        <h4><%= item.ans102 %></h4>
+        <h4><%= item.ans103 %></h4>
+        <h4><%= item.ans104 %></h4>
+        <h4><%= item.ans105 %></h4>
+        <h4><%= item.ans106 %></h4>
+        </div>
+        <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+        <!-- content 11 -->
+        <div class='text'>
+        <h2><%=item.module11%></h2>
+
+        <h3><%= item.content11 %></h3>
+        <h4><%= item.ans111 %></h4>
+        <h4><%= item.ans112 %></h4>
+        <h4><%= item.ans113 %></h4>
+        <h4><%= item.ans114 %></h4>
+        <h4><%= item.ans115 %></h4>
+        <h4><%= item.ans116 %></h4>
+        </div>
+        <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+        <!-- content 12 -->
+        <div class='text'>
+        <h2><%=item.module12%></h2>
+
+        <h3><%= item.content12 %></h3>
+        <h4><%= item.ans121 %></h4>
+        <h4><%= item.ans122 %></h4>
+        <h4><%= item.ans123 %></h4>
+        <h4><%= item.ans124 %></h4>
+        <h4><%= item.ans125 %></h4>
+        <h4><%= item.ans126 %></h4>
+        </div>
+        <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          </div>
+<!-- ----------------------------------------------------------------------------- -->
+        <div class="column"  style='background-color:#ccc;'>
+
+          <h2 class='text'>Examples</h2>
+          <!-- Example1 -->
+          <img src='/images/<%= item.Example1 %>_code.png' width='350px' height='250px' alt='<%= item.Example1%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example1 %>_output.png' width='350px' height='105px' alt='<%= item.Example1%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example2 -->
+          <img src='/images/<%= item.Example2 %>_code.png' width='350px' height='220px' alt='<%= item.Example2%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example2 %>_output.png' width='350px' height='260px' alt='<%= item.Example2%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example3 -->
+          <img src='/images/<%= item.Example3 %>_code.png' width='350px' height='230px' alt='<%= item.Example3%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example3 %>_output.png' width='350px' height='250px' alt='<%= item.Example3%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example4 -->
+          <img src='/images/<%= item.Example4 %>_code.png' width='350px' height='250px' alt='<%= item.Example4%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example4 %>_output.png' width='350px' height='180px' alt='<%= item.Example4%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example5 -->
+          <img src='/images/<%= item.Example5 %>_code.png' width='350px' height='245px' alt='<%= item.Example5%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example5 %>_output.png' width='350px' height='80px' alt='<%= item.Example5%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example6 -->
+          <img src='/images/<%= item.Example6 %>_code.png' width='350px' height='280px' alt='<%= item.Example6%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example6 %>_output.png' width='350px' height='240px' alt='<%= item.Example6%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example7 -->
+          <img src='/images/<%= item.Example7 %>_code.png' width='350px' height='420px' alt='<%= item.Example7%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example7 %>_output.png' width='350px' height='175px' alt='<%= item.Example7%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example8 -->
+          <img src='/images/<%= item.Example8 %>_code.png' width='350px' height='350px' alt='<%= item.Example8%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example8 %>_output.png' width='350px' height='225px' alt='<%= item.Example8%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example9 -->
+          <img src='/images/<%= item.Example9 %>_code.png' width='350px' height='220px' alt='<%= item.Example9%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example9 %>_output.png' width='350px' height='205px' alt='<%= item.Example9%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example10 -->
+          <img src='/images/<%= item.Example10 %>_code.png' width='350px' height='300px' alt='<%= item.Example10%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example10 %>_output.png' width='350px' height='240px' alt='<%= item.Example10%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example11 -->
+          <img src='/images/<%= item.Example11 %>_code.png' width='350px' height='220px' alt='<%= item.Example11%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example11 %>_output.png' width='350px' height='165px' alt='<%= item.Example11%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+          <!-- Example12 -->
+          <img src='/images/<%= item.Example12 %>_code.png' width='350px' height='250px' alt='<%= item.Example12%>_code' onclick='window.open(this.src)'/>
+          <img src='/images/<%= item.Example12 %>_output.png' width='350px' height='210px' alt='<%= item.Example12%>_output' onclick='window.open(this.src)'/>
+          <hr  style="height:5px;border:none;color:#333;background-color:#333;" />
+
+    </div>
+
+    </div>
+    <!-- //card -->
+      <% }); %>
+    </div>
+
+  </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title><%= title%></title>
+    <% include templates/header.ejs %>
+  </head>
+  <body>
+
+<img src = '' name = 'slide' width = '1400px' height='450px' />
+<a href = '/userlogin'><button type='button' class='get'>Get started</button></a>
+<div>
+  <h3 style='color:grey;margin-left:4%;'>About Developer</h3>
+  <img src="/images/me.jpg" class='me' alt="developer" width='100px' />
+  <h4 class='me1'>by <u>Jivika Pahwa</u></h4>
+  </div>
+  <div class='blog'>
+    Maybe you’re a student searching for office hours, a faculty member browsing databases,<br>
+    a fresh-faced prospective undergrad, an athletics fan… the list goes on.<br>
+     If developers haven’t crafted a clearly-organized, navigable, and functioning site for your school,<br>
+    you will find yourself in the web design equivalent of a food fight.
+    <br> <br>
+Of course, fulfilling all of the content and style demands of an education institution is a fine balance<br>
+ to strike: edge toward a more complicated design and the navigability of your content may suffer as a result
+ <br>(“What if I just want to know how late the bookstore is open!?”).
+ <br> On the other hand, rote and tone-deaf designs, even if they clearly lay out information, <br>
+ leave a bad taste in the mouths of a skeptical prospectives or would-be donating alumni.
+ <br><br>
+ <div class='quotes'>“Aim for success, not perfection. Never give up your right to be wrong,<br>
+  because then you will lose the ability to learn new things and move forward with your life.<br>
+   Remember that fear always lurks behind perfectionism.” <br>
+  <u> David M. Burns </u>
+   <br><br>
+   “Have you ever been at sea in a dense fog, when it seemed as if a tangible white darkness <br>
+   shut you in and the great ship, tense and anxious, groped her way toward the shore with plummet <br>
+    and sounding-line, and you waited with beating heart for something to happen? <br>
+     I was like that ship before my education began, only I was without compass or sounding line,<br>
+    and no way of knowing how near the harbor was. <br>
+    “Light! Give me light!” was the wordless cry of my soul,<br>
+    and the light of love shone on me in that very hour.”<br>
+    <u>Helen Keller</u>
+</div>
+  </div>
+  <div class='courses'>
+    <div class="row">
+    <% if (subjects.length > 0) { subjects.forEach(function(subject){%>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+    <img src="/images/<%= subject.image %>" class='icon' alt="<%= subject.subject_name %>" width='100px' />
+    <h2><b><%= subject.subject_name %> Tutorial</b></h2>
+    <br>
+    <!-- <a href = '/courses'><button type='button' class='getcourse'>Take This Course</button></a> -->
+  </div>
+  <div class="flip-card-back">
+    <h4 style="position:absolute;top:20%;"><%= subject.introduction %></h4>
+    <a href = '/courses'><button type='button' class='getcourse'>Take This Course</button></a>
+  </div>
+  </div>
+  </div>
+  <!-- //card -->
+    <% }); %>
+    <a href = '/courses'><button type='button' class='getagain'>View all the Courses</button></a>
+  </div>
+  <% } else { %>
+    <h4>no records available</h4>
+<%  } %>
+</div>
+<!-- //course div -->
+  <div class='slogan'>
+    Become a member of our growing Community ! <br> <br>
+  <a href = '/userlogin'><button type='button' class='getagain'>Get started</button></a>
+  </div>
+  <div class='footer'>
+    <span>128</span>Learners <span>62</span>Lessons <span>53</span>Quizzes
+  </div>
+  <p style='text-align:center;'>&copy; 2019 EduLearN . All Rights Reserved .</p>
+  </body>
+  <script src="/js/index.js"></script>
+</html>

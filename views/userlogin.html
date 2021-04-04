@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+  <head>
+    <style>
+    .header{
+      position: absolute;
+      top:110px;
+      left:45%;
+      font: 25px times roman;
+      text-decoration: none;
+    }
+    .user:hover{
+      text-decoration:none;
+      font-style: italic;
+      border:2px solid darkgray;
+      border-radius:4px;
+      width:35px;
+      background-color: lightGray;
+    }
+    </style>
+    <meta charset="utf-8">
+    <title> <%= title%> </title>
+    <% include templates/header.ejs %>
+    </head>
+    <body> <br> <br>
+        <div>
+
+      <div ng-app="myApp">
+        <div ng-controller='myCtrl' class='header' >
+          <a href="#!signIn" class='user'>Sign In  </a>
+        <a href=''>or</a>
+          <a href="#!signUp" class='user'>Sign Up </a>
+          </div>
+
+    <div ng-view></div>
+      </div>
+
+    </div>
+    </body>
+    <script src="/js/app2.js"></script>
+    <script src="/js/signInController.js"></script>
+</html>

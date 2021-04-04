@@ -1,0 +1,155 @@
+{
+  "tutorials": [{
+    "title":"HTML",
+    "name":"html tutorial",
+    "shortname":"html",
+    "Question11":"What does HTML stands for?",
+    "option11":"A) Hypertext Machine language.",
+    "option21":"B) Hypertext and links markup language.",
+    "option31":"C) Hypertext Markup Language.",
+    "option41":"D)  Hightext Machine Language",
+    "answer1":"Answer - option C",
+
+    "Question12":"How is document type initialized in HTML5.?",
+    "option12":"A) </DOCTYPE HTML>",
+    "option22":"B) </DOCTYPE>",
+    "option32":"C) <!DOCTYPE HTML>",
+    "option42":"D) </DOCTYPE html>",
+    "answer2":"Answer - option C",
+
+    "Question13":"Which of the following HTML Elements is used for making any text bold ?",
+    "option13":"A) <p>",
+    "option23":"B) <i>",
+    "option33":"C) <li>",
+    "option43":"D) <b>",
+    "answer3":"Answer - Option D"
+
+  },{
+    "title":"CSS",
+    "name":"css tutorial",
+    "shortname":"css",
+    "Question11":"What does CSS stands for?",
+    "option11":"A) Cascading Stylish Sheet",
+    "option21":"B) Cascading Style Sheet",
+    "option31":"C) Complex Stylish Sheet",
+    "option41":"D) Complex Style Sheet",
+    "answer1":"Answer - Option B",
+
+    "Question12":"If we want define style for an unique element, then which css selector will we use ?",
+    "option12":"A) Id",
+    "option22":"B) class",
+    "option32":"C) text",
+    "option42":"D) name",
+    "answer2":"Answer - Option A",
+
+    "Question13":"Which of the following is a component of CSS style rule?",
+    "option13":"A) Selector",
+    "option23":"B) Property",
+    "option33":"C) Value",
+    "option43":"D) All of these",
+    "answer3":"Answer -  Option D"
+
+  },{
+    "title":"JS",
+    "name":"Js tutorial",
+    "shortname":"js",
+    "Question11":"Which of the following is the correct syntax to print a page using JavaScript?",
+    "option11":"A) window.print();",
+    "option21":"B) browser.print();",
+    "option31":"c) navigator.print();",
+    "option41":"D) document.print();",
+    "answer1":"Answer - Option A",
+
+    "Question12":"Which of the following type of variable is visible only within a function where it is defined?",
+    "option12":"A) Local variable",
+    "option22":"B) Global variable",
+    "option32":"C) none of the above",
+    "option42":"D) all of the above",
+    "answer2":"Answer - Option C",
+
+    "Question13":"Which of the following function of Number object returns the number's value?",
+    "option13":"A) toString()",
+    "option23":"B) valueOf()",
+    "option33":"C) toLocaleString()",
+    "option43":"D) toPrecision()",
+    "answer3":"Answer - Option D"
+
+  },
+  {
+    "title":"Angular Js",
+    "name":"Angular Js tutorial",
+    "shortname":"ang",
+    "Question11":"What is View in MVC?",
+    "option11":"A) View represents a database view.",
+    "option21":"B) View is responsible for displaying all or a portion of the data to the user.",
+    "option31":"C) View is responsible to act and process the data.",
+    "option41":"D) None of the above",
+    "answer1":"Answer - Option B",
+
+    "Question12":"Which of the following is true about ng-show directive?",
+    "option12":"A) ng-show directive can show a given control.",
+    "option22":"B) ng-show directive can hide a given control.",
+    "option32":"C) Both of the above.",
+    "option42":"D) None of the above.",
+    "answer2":"Answer - Option C",
+
+    "Question13":"Which of the following is true about $routeProvider?",
+    "option13":"A) $routeProvider is the key service which set the configuration of urls.",
+    "option23":"B) $routeProvider maps Urls with the corresponding html page or ng-template.",
+    "option33":"C) $routeProvider attaches a controller with the view.",
+    "option43":"D) All of the above.",
+    "answer3":"Answer - Option D"
+
+  },
+  {
+    "title":"Node Js",
+    "name":"Node Js tutorial",
+    "shortname":"nodejs",
+    "Question11":"Which of the following command will show version of npm?",
+    "option11":"A) $ npm --version",
+    "option21":"B) $ node --version",
+    "option31":"C) $ npm getVersion",
+    "option41":"D) $ node getVersion",
+    "answer1":"Answer - Option A",
+
+    "Question12":" Which statement executes the code of sample.js file?",
+    "option12":"A) nodejs sample.js",
+    "option22":"B) node sample.js",
+    "option32":"C) sample.js",
+    "option42":"D) None of the above",
+    "answer2":"Answer - Option B",
+
+    "Question13":"What are the key features of Node.js?",
+    "option13":"A) Real time Data intensive",
+    "option23":"B) Highly scalable servers for Web Applications",
+    "option33":"C) Builds fast and scalable network Applications",
+    "option43":"D) All of the above",
+    "answer3":"Answer - Option D"
+
+  },{
+    "title":"MySql",
+    "name":"MySql tutorial",
+    "shortname":"mysql",
+    "Question11":"In the relational model, cardinality is termed as:",
+    "option11":"A) A number of tuples.",
+    "option21":"B) A number of attributes.",
+    "option31":"C) A number of tables.",
+    "option41":"D) A number of constraints.",
+    "answer1":"Answer - Option A",
+
+    "Question12":"The view of total database content is",
+    "option12":"A) Conceptual view.",
+    "option22":"B) Internal view.",
+    "option32":"C) External view.",
+    "option42":"D) Physical View.",
+    "answer2":"Answer - Option A",
+
+    "Question13":"DML is provided for",
+    "option13":"A) Description of the logical structure of a database.",
+    "option23":"B) The addition of new structures in the database system.",
+    "option33":"C) Manipulation & processing of the database.",
+    "option43":"D) Definition of a physical structure of the database system.",
+    "answer3":"Answer - Option C"
+
+    }]
+}

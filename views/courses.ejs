@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style>
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title> <%= title %> </title>
+    <% include templates/header.ejs %>
+  </head>
+  <body>
+    <div class="username">
+    <a href='/userprofile'> welcome <%=details%> </a>
+    </div>
+    <div>
+      <div class="row">
+
+      <% friends.forEach(function(item){ %>
+
+          <div class="course-card">
+            <div class="course-card-inner">
+              <div class="course-card-front">
+      <img src="/images/<%= item.shortname %>.png" class='course-icon' alt="<%= item.name %>" />
+      <h4><b><%= item.title %> Tutorial</b></h4>
+      <h4 style='color:darkgray;'><%= item.summary %></h4>
+      <a href = '/courses/<%=item.shortname%>'>
+        <!-- <button type='button' class='getcourse'>Take This Course</button></a> -->
+      </div>
+    </div>
+    </div>
+    <!-- //card -->
+      <% }); %>
+    </div>
+  </div>
+  </body>
+</html>
